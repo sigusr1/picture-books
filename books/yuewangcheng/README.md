@@ -4,9 +4,9 @@
 
 ## 阅读
 
-在线阅读：https://sigusr1.github.io/picture-books/books/yuewangcheng/
+在线阅读：https://blog.coderhuo.tech/picture-books/books/yuewangcheng/
 
-也可直接打开本目录的 `index.html`，点击左右按钮或使用键盘方向键翻页；手机端支持左右滑动。
+也可打开本目录的 `offline.html` 离线阅读。点击左右按钮或使用键盘方向键翻页；手机端支持左右滑动。
 
 ## 打印 / 导出 PDF
 
@@ -14,15 +14,16 @@
 
 ## 文件
 
-- `index.html`：自包含绘本，六幅插画均已内嵌，可离线阅读。
+- `index.html`：轻量在线版，引用书内 JPEG 图片，避免一次下载整个内嵌文件。
+- `offline.html`：自包含离线版，六幅插画均已内嵌。
 - `美丽的越王城.pdf`：8 页 A4 横向打印版。
 - `cover.jpg`：书架首页使用的封面。
 - `book.source.html`：绘本排版源文件。
 - `book.fragment.html`：内嵌插画的 body-only 版本，用于交互式预览。
 - `assets/`：GPT-Image-2.6 Sunburst 生成的六幅原始插画。
-- `assets/optimized/`：嵌入绘本的高质量 JPEG 构建缓存，不入库。
+- `assets/optimized/`：在线版引用、离线版内嵌的高质量 JPEG 图片。
 - `manifest.json`：插画模型、生成结果与逐图实景参考链接。
-- `build_book.py`：生成 `index.html`、`book.fragment.html` 和 `cover.jpg`。
+- `build_book.py`：生成在线版、离线版、预览片段和书架封面。
 
 ## 实景参考
 

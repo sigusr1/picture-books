@@ -284,6 +284,28 @@
       dots.appendChild(dot);
     });
 
+    function loadImages(indexes) {
+      indexes.forEach(index => {
+        const page = pages[index];
+        if (!page) return;
+        page.querySelectorAll('img[data-src]').forEach(image => {
+          image.src = image.dataset.src;
+          image.removeAttribute('data-src');
+        });
+      });
+    }
+
+    function printBook() {
+      loadImages(pages.map((_, index) => index));
+      const pending = [...document.images]
+        .filter(image => !image.complete)
+        .map(image => new Promise(resolve => {
+          image.addEventListener('load', resolve, {once: true});
+          image.addEventListener('error', resolve, {once: true});
+        }));
+      Promise.all(pending).then(() => window.print());
+    }
+
     function show(index) {
       current = Math.max(0, Math.min(pages.length - 1, index));
       pages.forEach((page, i) => {
@@ -295,6 +317,7 @@
         dot.classList.toggle('is-active', i === current);
         dot.setAttribute('aria-selected', String(i === current));
       });
+      loadImages([current - 1, current, current + 1]);
       prev.disabled = current === 0;
       next.disabled = current === pages.length - 1;
       status.textContent = `${current + 1} / ${pages.length}`;
@@ -303,7 +326,7 @@
 
     prev.addEventListener('click', () => show(current - 1));
     next.addEventListener('click', () => show(current + 1));
-    document.getElementById('printButton').addEventListener('click', () => window.print());
+    document.getElementById('printButton').addEventListener('click', printBook);
     document.addEventListener('keydown', event => {
       if (['ArrowRight', 'PageDown', ' '].includes(event.key)) {
         event.preventDefault();
