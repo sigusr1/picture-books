@@ -1,0 +1,55 @@
+{
+  "title": "美丽的越王城",
+  "location": "杭州湘湖越王城山",
+  "model": "gpt-image-2.6-sunburst",
+  "visualReferencePolicy": "Original watercolor illustration for style and protagonist; public real-scene photographs for architecture, terrain and viewpoint.",
+  "images": [
+    {
+      "file": "assets/01-cover.png",
+      "url": "https://done.cdn.alibabadesign.com/2026/11/27/b1d91773-53ee-4f01-8703-c8188fab4760/r2md-410b7a2b-5567-485c-b815-da5ef7fe4db4.png",
+      "realSceneReferences": [
+        "https://hznews.hangzhou.com.cn/wghz/images/2023-06/29/8f85888e-8e0d-4409-9ada-cdebf4638a80.jpg",
+        "https://5b0988e595225.cdn.sohucs.com/a_auto,c_cut,x_0,y_0,w_800,h_600/images/20190113/5c57d391c0544816b2c6af7133a56061.jpeg"
+      ]
+    },
+    {
+      "file": "assets/02-mountain-city.png",
+      "url": "https://done.cdn.alibabadesign.com/2026/11/27/0a33ce83-350c-402e-9b7a-3ed8979df9e3/r2md-9c046fb2-2f8a-4392-a622-83d66bc5d8f4.png",
+      "realSceneReferences": [
+        "https://hznews.hangzhou.com.cn/wghz/images/2023-06/29/189d0164-bfda-43be-b47c-10fff9572ad9.jpg",
+        "https://hznews.hangzhou.com.cn/wghz/images/2023-06/29/6cafd055-fa5b-4bbb-a446-3e93d0849915.jpg"
+      ]
+    },
+    {
+      "file": "assets/03-ancient-wall.png",
+      "url": "https://done.cdn.alibabadesign.com/2026/11/27/4e94e50f-b807-41e6-be47-9f3880171e5d/r2md-f736b805-c551-4fe6-9123-e8b330710e24.png",
+      "realSceneReferences": [
+        "https://hznews.hangzhou.com.cn/wghz/images/2023-06/29/c161e451-d8c2-40c7-93a2-c68ddfd36541.jpg",
+        "https://hznews.hangzhou.com.cn/wghz/images/2023-06/29/6cafd055-fa5b-4bbb-a446-3e93d0849915.jpg"
+      ]
+    },
+    {
+      "file": "assets/04-bronze-bell.png",
+      "url": "https://done.cdn.alibabadesign.com/2026/11/27/cc765377-5d1c-4d29-a4fd-3522f6f68ae2/r2md-77ee4f29-708e-40b0-83b0-59f30e60839e.png",
+      "realSceneReferences": [
+        "https://meizi-chao-pub.8531.cn/1992784020243673093_1280px.jpg?width=1280&height=960"
+      ]
+    },
+    {
+      "file": "assets/05-maple-path.png",
+      "url": "https://done.cdn.alibabadesign.com/2026/11/27/ed322006-67c6-4ae7-8048-c0de5b6864ef/r2md-bbf8fb2a-4791-4a59-b28b-0b3c0f630f67.png",
+      "realSceneReferences": [
+        "https://5b0988e595225.cdn.sohucs.com/a_auto,c_cut,x_0,y_0,w_800,h_600/images/20190113/5c57d391c0544816b2c6af7133a56061.jpeg"
+      ]
+    },
+    {
+      "file": "assets/06-summit-view.png",
+      "url": "https://done.cdn.alibabadesign.com/2026/11/27/60f7c2fb-e0e6-4455-9bd6-56b61a890a39/r2md-0ba05fe7-d476-42c5-b920-d86b4de6fa76.png",
+      "realSceneReferences": [
+        "https://5b0988e595225.cdn.sohucs.com/a_auto,c_cut,x_0,y_0,w_800,h_600/images/20190113/1c22769058914d4ea289a6407962d809.jpeg",
+        "https://5b0988e595225.cdn.sohucs.com/a_auto,c_cut,x_0,y_0,w_800,h_600/images/20190113/e279c24d5c0b42fcb1fb3d7539cef467.jpeg",
+        "https://meizi-chao-pub.8531.cn/1992784020243673102_1280px.jpg?width=1280&height=960"
+      ]
+    }
+  ]
+}
