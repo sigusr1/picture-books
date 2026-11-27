@@ -1,6 +1,7 @@
 import base64
 import re
 import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent
@@ -25,6 +26,7 @@ def document(body):
 
 
 def main():
+    subprocess.run([sys.executable, str(ROOT / "verify_text.py")], check=True)
     OPTIMIZED.mkdir(parents=True, exist_ok=True)
     web_html = SOURCE.read_text()
     embedded_html = web_html
